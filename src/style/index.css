@@ -1,0 +1,71 @@
+nav{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+#main-navbar li a{
+    text-decoration: none;
+    color: black;
+}
+#main-navbar li a:hover{
+    color: aqua;
+}
+nav button{
+    display: none;
+}
+main h2{
+    color: #4f4f4f;
+}
+.box{
+    padding-left: 20px;
+}
+#product-card{
+    background-color: #eee;
+    width: 100%;
+    height: 400px;
+}
+@media only screen and (max-width:600px){
+    #title{
+        font-size: 25px;
+    
+    }
+    nav{
+        display: flex;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+    nav button{
+        display: block;
+        border: none;
+        background-color: transparent;
+
+    }
+    nav button img{
+        width: 15px;
+    }
+    #product-card{
+        display: flex;
+    }
+    #product{
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        background-color: #4f4f4f;
+    }
+    
+}
+
+@media only screen and (min-width:600px){
+    #main-div{
+        padding-right:400px ;
+    }
+    section hr{
+        width: 80%;
+    }
+    #product{
+        background-image: url(../images/emartback.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 30%;
+        height: 250px;
+        margin: 5px;
+        background-color: #4f4f4f;
+    }
+}
