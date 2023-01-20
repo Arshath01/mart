@@ -5,6 +5,7 @@ nav{
     text-decoration: none;
     color: black;
 }
+
 #main-navbar li a:hover{
     color: aqua;
 }
@@ -40,6 +41,24 @@ main h2{
     }
     #nav-ul{
         display: none;
+        margin: 10px auto;
+        padding: 10px;
+        border-top: 2px solid  rgba(0, 0, 0, 0.1);
+    }
+    #nav-ul a{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+    }
+    #nav-ul li{
+        text-align: center;
+        padding: 15px;
+        font-size: large;
+        width: 400px;
+        border-bottom: 2px solid #eee;
+    }
+    #nav-ul li a:hover{
+        color: blue;
     }
     section hr{
         width: 90%;
@@ -68,7 +87,7 @@ main h2{
     #card img{
         width: 300px;
         margin: 0px auto;
-        height: 220px;
+        height: 240px;
     }
 }
 
