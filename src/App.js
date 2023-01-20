@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <Navbar title='E-Mart' />
-      <div className='ms-3'>
+      <div className='ps-2 pb-3' id='bundler'>
         <Slogancontainer heading='Introducing Emart'subheading='Destination for the sustainable products' />
         {
           products.map((product)=>
@@ -51,13 +51,14 @@ function App() {
             )
           )
         }
+        <Slider heading='Take a look at what’s new right now.'/>
       </div>
     </>
 
   );
 }
 
-const navStyle = ['navbar fixed-top navbar-expand-lg navbar-light bg-white'];
+const navStyle = ['navbar fixed-top navbar-expand-lg navbar-light bg-light'];
 
 function Navbar({ title }) {
 
@@ -95,9 +96,9 @@ function Navbar({ title }) {
 function Slogancontainer({ heading, subheading }) {
   return (
     <section>
-      <main className='pt-5 d-flex'>
+      <main className='pt-5 d-flex' id='section'>
         <div className="container  mt-4 py-3 ml-5" id='main-div'>
-          <h2 className='h1 fw-bold text-dark'>{heading}</h2>
+          <h2 className='h1 fw-bold text-primary'>{heading}</h2>
           <h1 className='h6 mb-4 text-dark'>{subheading}</h1>
           {/* description */}
           Our user-friendly website makes it easy to find what you're looking for,
@@ -107,6 +108,22 @@ function Slogancontainer({ heading, subheading }) {
       <hr className='my-4' />
     </section>
 
+  );
+}
+
+function Slider({heading}){
+  return(
+   <div id='container'>
+      <h1 className='h3 ps-3 my-3'>{heading}</h1>
+      <div id='slider-main' className='ms-3 p-2'>
+        <div id='slider' className='rounded m-1'></div>
+        <div id='slider' className='rounded m-1'></div>
+        <div id='slider' className='rounded m-1'></div>
+        <div id='slider' className='rounded m-1'></div>
+        <div id='slider' className='rounded m-1'></div>
+        <div id='slider' className='rounded m-1'></div>
+    </div>
+   </div>
   );
 }
 
